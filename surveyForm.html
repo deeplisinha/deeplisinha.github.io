@@ -1,0 +1,51 @@
+<html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<head>
+	<link rel="stylesheet" type="text/css" href="surveyformStyle.css" />
+</head>
+	<body>
+	<div id="main">
+	<h1 id="title">Survey form</h1>
+	<p id="description">Let us know how we can improve freeCodeCamp </p>
+	<form id="survey-form">
+		<label for="name" class="labels" id="name-label">* Name:</label>
+		<input name="name" type="text" id="name"  placeholder="Enter Your Name" class="input" required><br>
+	  <label for="email" class="labels" id="email-label">* Email:</label>
+		<input name="email" type="email" id="email" placeholder="Enter your email" class="input" required><br>
+		<label for="age" class="labels" id="number-label">*Age:</label>
+		<input name="age" type="number" id="number" placeholder="Enter your age" class="input" min="1" max="100" required><br>
+	  <br>
+	  <label for="purpose">Which option best describes your current role?</label>
+	  <<select id="dropdown" name="ddl">
+	<option value="stud">student</option>
+	<option value="fullt">Full Time Job</option>
+	<option value="fulllearn">Full Time Learner</option>
+	<option value="pns">Prefer not to Stay</option>
+	  <option value="oth">Others</option>
+	</select></br>
+	<br>
+	<ul style="list-style: none;">
+				  <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+	  <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+	  <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+	</ul>
+	Things that should be improved in the future
+	(Check all that apply): <input                            type="checkbox" id="ch1" value="1">Front-end Projects</br>
+	 <input type="checkbox" id="ch2" value="2">Data Visualization</br>
+	 <input type="checkbox" id="ch3" value="3">Open Source Community</br>
+	 <input type="checkbox" id="ch4" value="4">Back-end Projects</br>
+	 <input type="checkbox" id="ch5" value="5">Gitter help rooms</br>
+	 <input type="checkbox" id="ch6" value="6">
+	Videos</br>
+	 <input type="checkbox" id="ch7" value="7">City Meetups</br>
+	 
+	<label for="comments">Feedback</label>
+	<div class="rightTab">
+			<textarea id="comments" class="input-field" name="comment" placeholder="Any Suggestions..."></textarea>
+		  </div>
+	<button id="submit" type="submit">Submit</button>
+	</form></div>
+	n>
+	</form></div>
+</body>
+</html>
